@@ -6,7 +6,6 @@ describe('balanceReducer', () => {
     const balance = 10;
 
     it('sets a balance', () => {
-
         expect(
             balanceReducer(undefined,{type: constants.SET_BALANCE,balance})
         ).toEqual(balance);
@@ -16,6 +15,7 @@ describe('balanceReducer', () => {
             expect(balanceReducer2(undefined, {})).toEqual(balance);
         });
     });
+
     it('deposits into the balance', () => {
         const deposit = 10;
         const initialState = 5;
